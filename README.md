@@ -1,4 +1,4 @@
-# leetcode_problems
+# leetcode_SQL_problems
 solutions
 
 175. Combine Two Tables
@@ -13,3 +13,10 @@ on a.personid = p.personid;
 -----------------------------------------------
 select e1.Name as Employee from employee as e1, employee as e2          
 where e1.managerId=e2.id and e1.salary> e2.salary;
+</br></br>
+
+182. Duplicate Emails
+-----------------------
+select Email from Person
+group by Email
+having count(Email)> 1;
