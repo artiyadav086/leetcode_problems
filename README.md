@@ -20,3 +20,9 @@ where e1.managerId=e2.id and e1.salary> e2.salary;
 select Email from Person
 group by Email
 having count(Email)> 1;
+</br></br>
+
+183. Customers Who Never Order
+-------------------------------
+select Name as Customers from Customers
+where id not in (select customerId from Orders);
