@@ -26,7 +26,9 @@ having count(Email)> 1;
 -------------------------------
 select Name as Customers from Customers
 where id not in (select customerId from Orders);
-</be></br>
+</br></br>
+
+
 196. Delete Duplicate Emails
 --------------------------------
 delete P2
