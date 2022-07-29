@@ -35,3 +35,12 @@ delete P2
 from Person P1, Person P2
 where P1.Email= P2.Email
 and P1.Id< P2.Id;
+</br></br>
+
+
+197. Rising Temperature
+-----------------------
+select w1.Id as Id 
+from weather as w1, weather as w2 
+where w1.temperature>w2.temperature
+and to_days(w1.recordDate) = to_days(w2.recordDate)+1;
